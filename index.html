@@ -36,11 +36,12 @@
 </head>
 <body class="font-sora">
   <!-- header section -->
-    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] mb-20">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] mb-24">
       <!-- navbar section -->
       <nav class="flex justify-between items-center sm:w-full w-[90%] max-w-[1320px] mx-auto pt-5">
         <div>
-          <img src="./c2-assets/logo-header.png" alt="">
+          <img class="hidden md:block sm:block" src="./c2-assets/logo-header.png" alt="">
+          <img class="block sm:hidden" src="./c2-assets/leaf.png" alt="">
         </div>
         <div class="lg:block md:block hidden">
           <ul class="flex gap-7">
@@ -67,5 +68,49 @@
         <img src="./c2-assets/hero-vegetables.png" alt="">
        </div>
     </header>
+    <!-- services section -->
+     <main class="mb-24">
+        <section class="max-w-[1320px] mx-auto ">
+           <h1 class="text-4xl font-semibold text-primary-color sm:ml-auto ml-[5%]">Services</h1>
+           <div class="sm:flex  grid grid-cols-1 justify-items-center   gap-4 mt-14 ">
+            <div class="card bg-[#EFEBE3] sm:w-1/2 w-[90%]">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./c2-assets/service.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">24/7 Services </h2>
+                <p>No matter the time, our team is always ready to assist you</p>
+              </div>
+            </div>
+            <div class="card bg-[#EFEBE3] sm:w-1/2 w-[90%] ">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./c2-assets/delivery.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Fast Delivery</h2>
+                <p>Whether it’s across town or across the country, we guarantee fast delivery to your doorstep</p>
+              </div>
+            </div>
+            <div class="card bg-[#EFEBE3] sm:w-1/2 w-[90%]">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./c2-assets/healthy.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Healthy Products</h2>
+                <p>We believe in sustainability. Our products are not only good for you but also kind to the environment.</p>
+              </div>
+            </div>
+           </div>
+        </section>
+     </main>
 </body>
 </html>
