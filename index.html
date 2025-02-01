@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +39,7 @@
   <!-- header section -->
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] mb-24">
       <!-- navbar section -->
-      <nav class="flex justify-between items-center sm:w-full w-[90%] max-w-[1320px] mx-auto pt-5">
+      <nav class="flex justify-between items-center sm:w-full w-[90%] max-w-[1320px] mx-auto pt-5 pb-8">
         <div>
           <img class="hidden md:block sm:block" src="./c2-assets/logo-header.png" alt="">
           <img class="block sm:hidden" src="./c2-assets/leaf.png" alt="">
@@ -59,9 +60,10 @@
         </div>
         <div class="block sm:hidden"><i class="fa-solid fa-bars text-primary-color text-xl"></i></div>
       </nav>
+      <hr class="sm:hidden">
       <!-- navbar content -->
        <div class="mt-14 max-w-xl text-center mx-auto space-y-6 sm:w-full w-[90%]">
-        <h1 class="text-5xl font-semibold">Freshness <span class="text-primary-color">You Can Count</span> On, Prices You’ll Love!</h1>
+        <h1 class="text-5xl font-semibold"><span class="animation">Freshness</span><span class="text-primary-color">You Can Count</span> On, Prices You’ll Love!</h1>
         <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
        </div>
        <div class="max-w-4xl mx-auto">
@@ -75,10 +77,10 @@
            <div class="sm:flex  grid grid-cols-1 justify-items-center   gap-4 mt-14 ">
             <div class="card bg-[#EFEBE3] sm:w-1/2 w-[90%]">
               <figure class="px-10 pt-10">
-                <img
+                <div class="rounded-full border border-solid border-white bg-white p-6"><img
                   src="./c2-assets/service.png"
                   alt="Shoes"
-                  class="rounded-xl" />
+                  class= /></div>
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title">24/7 Services </h2>
@@ -87,10 +89,12 @@
             </div>
             <div class="card bg-[#EFEBE3] sm:w-1/2 w-[90%] ">
               <figure class="px-10 pt-10">
-                <img
+                <div class="rounded-full border border-solid border-white bg-white p-6">
+                  <img 
                   src="./c2-assets/delivery.png"
                   alt="Shoes"
                   class="rounded-xl" />
+                </div>
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title">Fast Delivery</h2>
@@ -99,10 +103,12 @@
             </div>
             <div class="card bg-[#EFEBE3] sm:w-1/2 w-[90%]">
               <figure class="px-10 pt-10">
-                <img
+                <div class="rounded-full border border-solid border-white bg-white p-6">
+                  <img
                   src="./c2-assets/healthy.png"
                   alt="Shoes"
                   class="rounded-xl" />
+                </div>
               </figure>
               <div class="card-body items-center text-center">
                 <h2 class="card-title">Healthy Products</h2>
@@ -117,11 +123,11 @@
       <section class="max-w-[1320px] mx-auto">
         <h1 class="text-4xl mb-20 font-semibold text-primary-color sm:ml-auto ml-[5%]">Popular Products</h1>
         <div class="mt-8 sm:flex sm:w-full w-[90%] sm:m-0 m-auto  gap-6">
-          <div class="bg-gradient-to-br from-[#179800] to-white p-7 rounded-lg max-w-md "> 
+          <div class="bg-gradient-to-br from-[#179800] to-white pl-5 pt-11  rounded-lg max-w-md "> 
               <h1 class="text-3xl text-white font-semibold mb-7">30% off</h1>
               <p class="mb-7">Discover a world of treats,toys,and essentials handpicked for</p>
               <button class="rounded-lg p-3 bg-white text-xl font-medium">Buy Now</button>
-              <img class="relative h-3/4 bottom-[53px] left-5 " src="./c2-assets/vegetable-offer.png" alt="">
+              <img class="ml-11" src="./c2-assets/vegetable-offer.png" alt="">
           </div>
           <div class="sm:grid sm:grid-cols-3 grid grid-cols-2 gap-6 sm:mt-0 mt-20 w-full">
             <!-- first row -->
@@ -219,7 +225,7 @@
      <!-- Arrival and Offer section -->
       <main class="mt-24">
         <section class="max-w-[1320px] mx-auto">
-          <h1 class="text-4xl font-semibold text-primary-color sm:ml-auto ml-[5%]">Services</h1>
+          <h1 class="text-4xl font-semibold text-primary-color sm:ml-auto ml-[5%]">Arrival & Offers</h1>
           <div class="sm:flex gap-5">
             <div class="mt-8 sm:mx-0 mx-auto bg-[#115414] rounded-3xl flex items-center justify-between pt-5 pl-5 sm:w-3/5 w-[95%] ">
               <div class="text-center space-y-6">
@@ -243,6 +249,33 @@
             </div>
           </div>
         </section>
+      </main>
+      <!-- extra section and faq  -->
+      <main class="mt-20">
+          <section class="sm:max-w-[1320px] w-[90%] mx-auto space-y-3">
+            <h1 class="text-4xl font-semibold text-primary-color sm:ml-auto ml-[5%] mb-5">About us</h1>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">1. What types of vegetables do you sell?</div>
+              <div class="collapse-content">
+                <p>"We offer a wide variety of fresh, locally sourced vegetables, including leafy greens, root vegetables,   cruciferous veggies, and more. Whether you're looking for everyday staples like carrots, potatoes, and tomatoes or something more exotic, we’ve got you covered!"</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">2. Where do your vegetables come from?</div>
+              <div class="collapse-content">
+                <p>"Our vegetables are sourced from trusted local farms that use sustainable and eco-friendly practices. We prioritize freshness and quality, ensuring that all produce reaches you at its peak ripeness."</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">3. Are your vegetables organic?</div>
+              <div class="collapse-content">
+                <p>"Many of our vegetables are certified organic, but we also offer non-organic options to suit every customer’s needs. We believe in providing high-quality produce at affordable prices, whether it’s grown with organic methods or conventional farming practices."</p>
+              </div>
+            </div>
+          </section>
       </main>
       <!-- Grocery news section -->
       <main class="relative top-48 ">
